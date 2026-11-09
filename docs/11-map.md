@@ -69,6 +69,7 @@ Captures tirées de la vidéo d'Azerr, uniquement comme référence.
 - Dossier `Map/HideSpots` : cachettes connues (pour que l'IA les surveille).
 - Dossier `Map/DropSpots` : coins isolés pour les enlèvements.
 - Dossier `Map/MonsterSpawns` : points d'apparition et de disparition du monstre.
+- Dossier `Map/NavLinks` et `PathfindingModifier` sur les zones : voir [14-navigation.md](14-navigation.md).
 - Lumières nommées (cabane, lanternes) pour que le monstre puisse les faire grésiller.
 
 ## Direction artistique : l'hyper-réalisme
