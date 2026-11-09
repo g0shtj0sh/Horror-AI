@@ -25,6 +25,7 @@ Les joueurs doivent **réparer des générateurs et survivre 5 nuits**. Le monst
 | [docs/13-lecons-ia-jeu-video.md](docs/13-lecons-ia-jeu-video.md) | Leçons de la vidéo « Mais pourquoi l'IA est pourrie ? » appliquées à notre monstre |
 | [docs/14-navigation.md](docs/14-navigation.md) | Navigation du monstre : navmesh, pathfinding, liens et coûts dans Roblox |
 | [docs/15-lecons-bazar-du-grenier.md](docs/15-lecons-bazar-du-grenier.md) | Leçons des autres vidéos du Bazar du Grenier : map, son, immersion, alerte, intro, monétisation |
+| [docs/prompts/](docs/prompts/) | Prompts prêts à l'emploi pour le Claude de Vibestarter (Roblox Studio), étape par étape |
 | [AI/](AI/) | Le dossier où sera codée l'IA du monstre |
 
 ## Organisation du dépôt
