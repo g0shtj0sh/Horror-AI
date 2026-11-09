@@ -16,6 +16,7 @@
 | Silence | Outil de peur à part entière, pas de stimulus obligatoire |
 | Générateurs | **5** par partie, compteur **« 0/5 »** |
 | Revive | **Illimité** par partie, **impossible en nuit 5**, à acheter **dans la minute** qui suit la mort (sinon reste mort/spectateur) |
+| Point de revive | **Point aléatoire de la map, mais assez loin du monstre** (pas de spawnkill) |
 | Loot boxes | Faites **proprement selon les règles Roblox** (probabilités affichées, `PolicyService` par pays) |
 | Monétisation | Gamepass **infrarouge**, **revive** pas cher, **loot boxes de cosmétiques** ; aucun traitement de faveur du monstre |
 | Vue | Première personne, lampe torche, endurance, effet dashcam (système existant) |
@@ -37,7 +38,6 @@
 5. **Nombre d'emplacements possibles** pour les 5 générateurs.
 6. **Les joueurs peuvent-ils se défendre** ? (lampe qui fait reculer le monstre au début, objets, cachettes, safe zone ?)
 7. **Soins** : la vie remonte-t-elle avec le temps ?
-11. **Revive** : où réapparaît le joueur ? (cabane, à côté de son corps, point aléatoire ?)
 8. **La map** : plan précis et nom des zones (forêt hyper-réaliste validée).
 9. **Le monstre** : apparence, nom, taille.
 10. **Le chat de proximité / voix** : chat vocal Roblox activé ou non ?

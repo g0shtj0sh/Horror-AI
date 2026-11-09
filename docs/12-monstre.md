@@ -42,3 +42,9 @@ Dossier : [images/monstre/meshy/](images/monstre/meshy/) — zip : `monstre-mesh
 ![Version C](images/monstre/meshy/C-buste-planche.png)
 
 **Recommandation** : viser le visage et les mains de **B** dans la pose de **A**. Image → 3D en multi-vues avec B (face, profil, dos) ; si l'auto-rigging échoue (bras collés au corps), régénérer une version T-pose avec le visage de B.
+
+## Modèles 3D générés
+Les deux modèles à comparer en jeu sont dans [assets/monstre/](../assets/monstre/) avec leur fiche technique :
+- **A** : riggé (24 os), animations `Walking` et `Running`, 2,5 m ;
+- **B** : remesh texturé, sans squelette, 1,9 m.
+Tous deux font 10 300 triangles. Textures en 4096×4096 à réduire en 1024×1024 pour Roblox.
