@@ -1,0 +1,31 @@
+# 10 — Décisions et questions ouvertes
+
+## Décisions prises ✅
+| Sujet | Décision |
+|---|---|
+| Approche IA | V1 à **règles** (Directeur), puis V2 **entraînée** sur les données réelles |
+| Objectif joueurs | Réparer les générateurs et survivre **5 nuits** |
+| Durées | Jour **10 min**, nuit **15 min** |
+| Map | Une map fixe, pas très grande, générateurs aléatoires parmi des emplacements prédéfinis. Map **pas encore choisie** |
+| Vue | Première personne, lampe torche, endurance, effet dashcam (système existant) |
+| Bandes noires | Désactivées par défaut, activables dans les paramètres |
+| Connaissance du monstre | **Omniscient** : il sait tout, mais choisit de faire semblant |
+| Jour 1 | Bruits **proches** mais ambigus (branches, feuilles) |
+| Dégâts | Frapper / dévorer puis lâcher, **sans malus** |
+| Morts | Corps qui restent ; morts = spectateurs avec **chat réservé aux morts** |
+| Enlèvement | À partir de la nuit 4, avec règles d'équité |
+| Mimic | Jour/Nuit 5, **phrases préécrites**, n'attaque jamais le jour en mimic |
+| Vue debug | **3e personne**, vision nocturne pour le développeur, pensées de l'IA affichées |
+| Monstre | Design **original** (pas de copie de Vita Carnis ou autre) ; modèle provisoire en attendant |
+
+## Questions ouvertes ❓
+1. **Conditions de défaite** : que se passe-t-il si trop de générateurs sont en panne ? Tous les joueurs morts = défaite, d'accord, mais les générateurs ?
+2. **Victoire** : suffit-il d'un survivant à la fin de la nuit 5 ?
+3. **Mise à mort avant la nuit 4** : le monstre peut-il tuer en nuit 3, ou seulement blesser ?
+4. **Nombre de joueurs** : minimum et maximum par partie ?
+5. **Nombre de générateurs** et d'emplacements possibles.
+6. **Les joueurs peuvent-ils se défendre** ? (lampe qui fait reculer le monstre au début, objets, cachettes, safe zone ?)
+7. **Soins** : la vie remonte-t-elle avec le temps ?
+8. **La map** : thème et plan.
+9. **Le monstre** : apparence, nom, taille.
+10. **Le chat de proximité / voix** : chat vocal Roblox activé ou non ?
