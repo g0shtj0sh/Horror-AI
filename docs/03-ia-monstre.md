@@ -115,3 +115,12 @@ Intentions possibles :
 ## Le monstre physique
 - **Pas encore de modèle** : un modèle provisoire (silhouette sombre) servira pour les tests.
 - Design final : **original**, à créer.
+
+## Règles ajoutées (voir [13-lecons-ia-jeu-video.md](13-lecons-ia-jeu-video.md))
+- **Signaux constants** : chaque son du monstre a toujours le même sens (grognement long = chasse, lumières qui grésillent = tout proche…).
+- **Annoncer ses intentions** par le son (reniflement, grognement, bruit avant de se déplacer).
+- **Contre-mesures débloquées** selon les habitudes des joueurs (cachette fixe, cabane, tour, lampe éteinte…).
+- **Pitié cachée** : rater de justesse un joueur qui fuit à bout de souffle, surtout dans les premières nuits.
+- **Rencontres assez longues** pour que le joueur voie l'intelligence du monstre.
+- **Fenêtres de réaction** : changements de direction lents et sonores.
+- **Difficulté adaptative** gérée par le Directeur, pas de modes de difficulté séparés.
