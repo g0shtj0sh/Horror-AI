@@ -21,6 +21,7 @@ Les joueurs doivent **réparer des générateurs et survivre 5 nuits**. Le monst
 | [docs/09-roadmap.md](docs/09-roadmap.md) | Les étapes de développement, de la V1 à l'IA entraînée |
 | [docs/10-decisions.md](docs/10-decisions.md) | Toutes les décisions prises et les questions encore ouvertes |
 | [docs/11-map.md](docs/11-map.md) | La map : style forêt de la vidéo, lieux, cachettes, besoins de l'IA (avec captures) |
+| [docs/12-monstre.md](docs/12-monstre.md) | Le design du monstre et sa génération avec Meshy AI |
 | [AI/](AI/) | Le dossier où sera codée l'IA du monstre |
 
 ## Organisation du dépôt
