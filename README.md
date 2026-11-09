@@ -24,6 +24,7 @@ Les joueurs doivent **réparer des générateurs et survivre 5 nuits**. Le monst
 | [docs/12-monstre.md](docs/12-monstre.md) | Le design du monstre et sa génération avec Meshy AI |
 | [docs/13-lecons-ia-jeu-video.md](docs/13-lecons-ia-jeu-video.md) | Leçons de la vidéo « Mais pourquoi l'IA est pourrie ? » appliquées à notre monstre |
 | [docs/14-navigation.md](docs/14-navigation.md) | Navigation du monstre : navmesh, pathfinding, liens et coûts dans Roblox |
+| [docs/15-lecons-bazar-du-grenier.md](docs/15-lecons-bazar-du-grenier.md) | Leçons des autres vidéos du Bazar du Grenier : map, son, immersion, alerte, intro, monétisation |
 | [AI/](AI/) | Le dossier où sera codée l'IA du monstre |
 
 ## Organisation du dépôt

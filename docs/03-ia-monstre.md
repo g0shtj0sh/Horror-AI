@@ -124,3 +124,14 @@ Intentions possibles :
 - **Rencontres assez longues** pour que le joueur voie l'intelligence du monstre.
 - **Fenêtres de réaction** : changements de direction lents et sonores.
 - **Difficulté adaptative** gérée par le Directeur, pas de modes de difficulté séparés.
+
+## Règles ajoutées (voir [15-lecons-bazar-du-grenier.md](15-lecons-bazar-du-grenier.md))
+- **Règle des N secondes** : jamais trop longtemps sans stimulus pour un joueur (N selon la phase).
+- **Niveau d'alerte de groupe** progressif et réversible selon l'imprudence du groupe.
+- **Bruit des pas selon le sol** : mêmes valeurs pour le son entendu par le joueur et le rayon d'écoute du monstre.
+- **Faune qui se tait** près du monstre : nouveau signal constant.
+- **Enquêter sur les changements** (porte ouverte, générateur relancé, objet déplacé).
+- **Intention « Spectacle »** : se montrer de loin en train de faire autre chose (carcasse, chasse d'un animal).
+- **Montrer chaque capacité** de loin avant de l'utiliser contre les joueurs.
+- **Points de révélation** : apparitions placées là où le joueur découvre le paysage.
+- **Les achats Robux ne sont jamais une donnée du Directeur.**
