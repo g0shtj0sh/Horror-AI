@@ -8,7 +8,7 @@
 | Durées | Jour **10 min**, nuit **15 min** |
 | Map | Une map fixe, pas très grande, générateurs aléatoires parmi des emplacements prédéfinis. Style **forêt** comme dans la vidéo de référence (voir [11-map.md](11-map.md)) |
 | Direction artistique | **Hyper-réalisme** (textures PBR, éclairage réaliste) ; la caméra « mauvaise qualité » amplifie le réalisme (effet found footage) |
-| Construction de la map | Envisagée : un Claude connecté à Roblox Studio avec une bibliothèque de textures PBR (à confirmer) |
+| Construction de la map | Un Claude via **Vibestarter** (connecté à Roblox Studio et au web) télécharge et uploade lui-même les ressources CC0 (Poly Haven, ambientCG), en **1024×1024 max** ; vérification manuelle par le créateur |
 | Vue | Première personne, lampe torche, endurance, effet dashcam (système existant) |
 | Bandes noires | Désactivées par défaut, activables dans les paramètres |
 | Connaissance du monstre | **Omniscient** : il sait tout, mais choisit de faire semblant |
