@@ -71,6 +71,24 @@ Captures tirées de la vidéo d'Azerr, uniquement comme référence.
 - Dossier `Map/MonsterSpawns` : points d'apparition et de disparition du monstre.
 - Lumières nommées (cabane, lanternes) pour que le monstre puisse les faire grésiller.
 
+## Direction artistique : l'hyper-réalisme
+**Le thème, c'est l'hyper-réalisme.** La map de la vidéo est « cartoon » (style Roblox classique) ; la nôtre doit au contraire **ressembler à une vraie forêt filmée**.
+
+Le principe : **caméra « mauvaise qualité » + monde ultra réaliste = effet found footage**. Le grain, le vignettage et l'objectif imparfait de la caméra dashcam rendent le réalisme encore plus crédible, comme une vraie vidéo trouvée.
+
+Règles visuelles :
+- **Textures PBR** partout (couleur, normale, rugosité, métal) : écorce, terre humide, mousse, herbe, roche, bois de la cabane, métal rouillé du générateur.
+- **Pas de couleurs saturées** ni de formes « Roblox » (pas de blocs lisses, pas d'arbres en boule).
+- **Éclairage réaliste** : Future lighting, ombres douces, brouillard et atmosphère, nuit vraiment noire, lumières chaudes et faibles (lanternes, cabane).
+- **Végétation dense et variée** : herbes hautes, fougères, troncs morts, feuilles au sol.
+- **Détails crédibles** : objets usés, sales, abandonnés (bidons, outils, panneaux délavés).
+- **Performance à surveiller** : Roblox tourne aussi sur téléphone, donc il faut trouver un équilibre entre réalisme et fluidité (niveau de détail, nombre d'objets, StreamingEnabled).
+
+## Construction
+- Méthode envisagée : **un Claude connecté à Roblox Studio** (via un serveur MCP Roblox Studio) qui construit la map et les bâtiments lui-même, à partir d'une **bibliothèque de textures PBR** fournie par le créateur.
+- Ce Claude devra suivre ce document : lieux, cachettes, besoins de l'IA, et les dossiers `Map/...` listés plus haut.
+- Méthode définitive encore à décider.
+
 ## Questions ouvertes
-- Thème exact (forêt comme la vidéo, ou variante) et nom des zones.
-- Construite à la main, ou à partir d'un kit de décor ?
+- Nom des zones et plan précis.
+- Source des textures PBR et des modèles 3D (arbres, rochers, cabane).
