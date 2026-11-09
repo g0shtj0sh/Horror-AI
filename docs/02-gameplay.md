@@ -43,7 +43,11 @@ Le niveau de menace du monstre augmente à chaque période (détail dans [04-pha
 
 > L'IA devra pouvoir lire l'état de la lampe de chaque joueur (allumée/éteinte, direction). À brancher sur le système existant le moment venu.
 
+## Générateurs : nombre
+- **5 générateurs** par partie, compteur **« 0/5 »** à l'écran.
+
 ## Mort et spectateurs
+- **Revive (payant)** : possible **autant de fois qu'on veut**, **sauf en nuit 5**. Le joueur a **1 minute** après sa mort pour l'acheter ; passé ce délai, il reste spectateur. Le corps d'un joueur revive disparaît.
 - Quand un joueur meurt, **son corps reste dans la map** à l'endroit de la mort (sauf si le monstre l'utilise pour le mimic, voir [05-scenarios.md](05-scenarios.md)).
 - Les morts deviennent **spectateurs** et regardent les joueurs encore en vie.
 - Les morts ont un **chat réservé aux morts**. Ils ne peuvent **plus parler aux vivants** (indispensable pour le mimic).

@@ -14,6 +14,9 @@
 | Tutoriel | **Aucun** : joueurs déposés à la cabane, compteur « 0/4 » des générateurs, générateurs en panne qui fument, « E » + temps + QTE simple |
 | Capacités du monstre | **Jamais montrées à l'avance**, les joueurs les découvrent |
 | Silence | Outil de peur à part entière, pas de stimulus obligatoire |
+| Générateurs | **5** par partie, compteur **« 0/5 »** |
+| Revive | **Illimité** par partie, **impossible en nuit 5**, à acheter **dans la minute** qui suit la mort (sinon reste mort/spectateur) |
+| Loot boxes | Faites **proprement selon les règles Roblox** (probabilités affichées, `PolicyService` par pays) |
 | Monétisation | Gamepass **infrarouge**, **revive** pas cher, **loot boxes de cosmétiques** ; aucun traitement de faveur du monstre |
 | Vue | Première personne, lampe torche, endurance, effet dashcam (système existant) |
 | Bandes noires | Désactivées par défaut, activables dans les paramètres |
@@ -31,11 +34,10 @@
 2. **Victoire** : suffit-il d'un survivant à la fin de la nuit 5 ?
 3. **Mise à mort avant la nuit 4** : le monstre peut-il tuer en nuit 3, ou seulement blesser ?
 4. **Nombre de joueurs** : minimum et maximum par partie ?
-5. **Nombre de générateurs** et d'emplacements possibles.
+5. **Nombre d'emplacements possibles** pour les 5 générateurs.
 6. **Les joueurs peuvent-ils se défendre** ? (lampe qui fait reculer le monstre au début, objets, cachettes, safe zone ?)
 7. **Soins** : la vie remonte-t-elle avec le temps ?
-11. **Revive** : combien de fois par partie, où réapparaît-on, autorisé en nuit 5 ?
-12. **Nombre de générateurs** : le compteur « 0/4 » suggère 4 par nuit, à confirmer.
+11. **Revive** : où réapparaît le joueur ? (cabane, à côté de son corps, point aléatoire ?)
 8. **La map** : plan précis et nom des zones (forêt hyper-réaliste validée).
 9. **Le monstre** : apparence, nom, taille.
 10. **Le chat de proximité / voix** : chat vocal Roblox activé ou non ?

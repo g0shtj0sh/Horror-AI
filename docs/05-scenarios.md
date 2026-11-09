@@ -46,10 +46,10 @@ Ce sont les « gros coups » que le Directeur peut déclencher quand les conditi
 
 ## 5. Le mode Mimic (Jour 5 et Nuit 5)
 **Déroulé :**
-1. Le monstre choisit un joueur mort, de préférence **un mort que les vivants n'ont pas vu mourir** (dans la vidéo, le mimic a été démasqué car tout le monde savait que le joueur était mort depuis longtemps).
+1. Le monstre choisit un joueur mort **non revive** (son corps est encore là), de préférence **un mort que les vivants n'ont pas vu mourir** (dans la vidéo, le mimic a été démasqué car tout le monde savait que le joueur était mort depuis longtemps).
 2. Il **fait disparaître son corps**.
 3. Il revient avec **l'apparence et le pseudo** du mort.
-4. Il écrit dans le chat, avec son nom, des **phrases préécrites**, par exemple :
+4. Il écrit dans le chat, avec son nom, des **phrases préécrites**, par exemple (attention : le revive étant **impossible en nuit 5**, l'excuse « revive » ne doit être utilisée que **le jour 5** ; en nuit 5, utiliser « j'étais caché », « je me suis perdu »…) :
    - « j'ai été revive mais ils m'ont mute en pénalité »
    - « go réparer les générateurs »
 5. Il **reste avec le groupe** et se comporte normalement : il suit, fait semblant de réparer, éclaire avec une lampe.

@@ -91,7 +91,7 @@ Les 24 autres vidéos de la playlist (Blizzard, E3, Sega, mascottes…) n'apport
 
 - **Pas de tutoriel, aucune explication.** Les joueurs apparaissent directement à un endroit (la cabane par exemple) et comprennent seuls.
 - **Seul guidage : les générateurs.**
-  - un compteur discret **« 0/4 »** (générateurs réparés / total) ;
+  - un compteur discret **« 0/5 »** (générateurs réparés / total) ;
   - les générateurs en panne sont **éteints ou cassés, avec de la fumée**, et un indicateur « en panne » ;
   - en s'approchant : **« E » pour réparer / allumer**, une durée de réparation, et un **QTE très simple**.
   Tout le monde comprend sans explication.
@@ -106,7 +106,7 @@ Le jeu doit rapporter sur Roblox. Ce qui est décidé :
 | Achat | Type | Effet |
 |---|---|---|
 | **Mode infrarouge** de la dashcam | Gamepass | Voir dans le noir sans lumière (champ réduit, grain, batterie limitée) |
-| **Revive** | Achat (prix bas) | Revenir en jeu après la mort |
+| **Revive** | Achat (prix bas) | Revenir en jeu après la mort : **illimité**, **impossible en nuit 5**, à acheter **dans la minute** qui suit la mort |
 | **Loot boxes** | Achat | **Cosmétiques uniquement** |
 
 Règles :
@@ -119,7 +119,12 @@ Règles :
 
 Points d'attention :
 - **Revive et mimic.** Le mimic ment en disant « j'ai été revive ». Si le revive existe vraiment, **le mensonge devient crédible**, ce qui rend le mimic encore plus efficace. À l'inverse, il faut que le vrai revive ait des **règles claires** (où réapparaît-on, combien de fois par partie) pour que les joueurs ne puissent pas démasquer le mimic trop facilement ni trop difficilement.
-- **Revive et équité** : à limiter (par exemple une fois par partie, ou pas pendant la nuit 5) pour ne pas casser la tension ni donner un trop gros avantage.
+- **Règles du revive (décidées)** : autant de fois qu'on veut, **sauf en nuit 5** où c'est impossible ; le joueur a **1 minute** après sa mort pour l'acheter, sinon il reste spectateur.
+- **Revive et corps** : quand un joueur est revive, **son corps disparaît**. Le mimic ne peut donc utiliser que les morts qui n'ont **pas** été revive (fenêtre d'une minute passée).
+- **Revive et mimic en nuit 5** : comme le revive est impossible en nuit 5, un mimic qui dit « j'ai été revive » **pendant la nuit 5** se trahit pour un joueur attentif. Le Directeur doit donc :
+  - faire arriver le mimic **pendant le jour 5** (où le revive est encore possible), ou juste avant la tombée de la nuit ;
+  - en nuit 5, utiliser une **autre excuse** (« j'étais caché », « je me suis perdu », « j'avais pas de lampe ») ;
+  - un joueur qui remarque l'incohérence a **gagné à la réflexion** : c'est le bon équilibre.
 - **Infrarouge** : le monstre doit rester redoutable face à un joueur en infrarouge (il peut le voir aussi bien qu'avec une lampe éteinte ; la gamepass aide à voir, pas à être invisible).
 
 ## 8. Simplicité (RTS)
