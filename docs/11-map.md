@@ -85,7 +85,7 @@ Règles visuelles :
 - **Performance à surveiller** : Roblox tourne aussi sur téléphone, donc il faut trouver un équilibre entre réalisme et fluidité (niveau de détail, nombre d'objets, StreamingEnabled).
 
 ## Construction
-- Méthode retenue : **un Claude via Vibestarter** (harnais IA connecté à Roblox Studio et au web) qui construit la map et les bâtiments lui-même, à partir d'une **bibliothèque de textures PBR** fournie par le créateur.
+- Méthode retenue : **un Claude via Vibestarter** (harnais IA connecté à Roblox Studio et au web) qui construit la map et les bâtiments lui-même, avec des **textures PBR et modèles qu.il télécharge lui-même** (sources ci-dessous).
 - Ce Claude devra suivre ce document : lieux, cachettes, besoins de l'IA, et les dossiers `Map/...` listés plus haut.
 - Sources et règles techniques : voir les deux sections suivantes.
 
