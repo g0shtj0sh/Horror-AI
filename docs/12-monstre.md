@@ -27,3 +27,18 @@
 ## Contraintes pour l'IA et la map
 - 2,5 m : prévoir une animation pour **se baisser** sous les portes (cabane).
 - Animations nécessaires : marcher (pas lourds), ramper (silencieux), courir, grimper, attraper/porter, frapper, dévorer, apparaître/disparaître.
+
+## Images générées (Meshy, Nano Banana Pro)
+Dossier : [images/monstre/meshy/](images/monstre/meshy/) — zip : `monstre-meshy.zip` à la racine.
+
+| Version | Description | Usage |
+|---|---|---|
+| **A** — T-pose | Corps entier, bras en croix, sourire plus discret | Pose idéale pour le rigging |
+| **B** — bras le long du corps | Corps entier, **grands yeux, sourire jaune énorme, longues griffes** : le design le plus effrayant | **Design de référence retenu** |
+| **C** — buste en T-pose | Haut du corps seulement, visage de la version B | Référence du visage uniquement |
+
+![Version A](images/monstre/meshy/A-tpose-planche.png)
+![Version B](images/monstre/meshy/B-bras-bas-planche.png)
+![Version C](images/monstre/meshy/C-buste-planche.png)
+
+**Recommandation** : viser le visage et les mains de **B** dans la pose de **A**. Image → 3D en multi-vues avec B (face, profil, dos) ; si l'auto-rigging échoue (bras collés au corps), régénérer une version T-pose avec le visage de B.
