@@ -11,7 +11,7 @@
 | Construction de la map | Un Claude via **Vibestarter** (connecté à Roblox Studio et au web) télécharge et uploade lui-même les ressources CC0 (Poly Haven, ambientCG), en **1024×1024 max** ; vérification manuelle par le créateur |
 | Musique | **Aucune en partie**, seulement dans le lobby |
 | Faune | **Aucun animal visible**, uniquement des sons (qui se taisent près du monstre) |
-| Tutoriel | **Aucun** : joueurs déposés à la cabane, compteur « 0/4 » des générateurs, générateurs en panne qui fument, « E » + temps + QTE simple |
+| Tutoriel | **Aucun** : joueurs déposés à la cabane, compteur « 0/5 » des générateurs, générateurs en panne qui fument, « E » + temps + QTE simple |
 | Capacités du monstre | **Jamais montrées à l'avance**, les joueurs les découvrent |
 | Silence | Outil de peur à part entière, pas de stimulus obligatoire |
 | Générateurs | **5** par partie, compteur **« 0/5 »** |
