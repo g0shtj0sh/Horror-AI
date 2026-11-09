@@ -15,6 +15,13 @@ Analyse de la playlist « One Shots du Bazar » (32 vidéos) et de la série « 
 
 Les 24 autres vidéos de la playlist (Blizzard, E3, Sega, mascottes…) n'apportent rien à notre jeu.
 
+> **Décisions du créateur (prioritaires sur le reste du document)**
+> - Le **silence** fait aussi peur : pas de stimulus obligatoire toutes les N secondes.
+> - **Aucune musique en partie** (seulement dans le lobby).
+> - **Aucun animal visible** : la faune n'existe que par le son.
+> - **Pas de tutoriel**, et le monstre **ne montre pas ses capacités à l'avance** : les joueurs les découvrent.
+> - **Monétisation** : gamepass **infrarouge**, **revive** pas cher, **loot boxes de cosmétiques**. Aucun traitement de faveur du monstre envers les joueurs qui ont payé.
+
 ---
 
 ## 1. La map et le guidage (Open Worlds, level design)
@@ -33,7 +40,7 @@ Les 24 autres vidéos de la playlist (Blizzard, E3, Sega, mascottes…) n'apport
 
 ## 2. Le rythme
 
-- **Règle des 60 s appliquée à la peur.** En plus de la jauge de tension, le Directeur garantit qu'un joueur ne reste jamais plus de N secondes sans le moindre stimulus (bruit, silhouette, branche qui craque), N dépendant de la phase. Les trajets entre générateurs deviennent son terrain de jeu.
+- ~~Règle des 60 s~~ **Rejetée.** Le silence fait aussi peur : juste après une attaque, **il ne se passe rien pendant un bon moment**, et c'est ce vide qui fait monter la tension. Le Directeur utilise le silence comme un outil à part entière (intention « Silence »), pas comme un trou à combler. Les trajets entre générateurs restent son terrain de jeu, mais il choisit librement d'y agir ou non.
 - **Pas de remplissage** : des nuits denses, et **une variation par nuit** pour ne jamais rejouer la même :
   - brouillard ;
   - carburant à porter jusqu'au générateur ;
@@ -44,13 +51,12 @@ Les 24 autres vidéos de la playlist (Blizzard, E3, Sega, mascottes…) n'apport
 
 ## 3. Le son et la musique
 
-- **Effet Space Invaders.** Une nappe (drone ou battement de cœur) dont la vitesse et le volume suivent **l'état du Directeur pour ce joueur** (calme, traque, chasse), et **pas la distance exacte du monstre**, sinon on pourrait le pister. Elle s'accélère toujours quand l'état monte : signal constant.
-- **Musique en couches** : 3 ou 4 pistes au même tempo (nappe, pulsation, cordes stridentes, percussions de chasse) jouées ensemble et synchronisées. On fait seulement varier leur volume (`TweenService`, `SoundGroup`) selon l'état.
-- **Peu de musique** : en horreur, l'**arrivée** de la musique est elle-même un signal. Pas de musique = rien d'imminent.
+- **Aucune musique en partie.** La musique n'existe que dans le **lobby**, avant de lancer une partie. En jeu, tout passe par les **sons du monde** (vent, forêt, pas, monstre) et le silence.
+- ~~Nappe qui accélère, musique en couches~~ : abandonnées avec la musique. Éventuellement, la **respiration et le cœur du personnage** (sons du corps, pas de la musique) peuvent s'accélérer quand le joueur court ou a peur.
 - **Occlusion du son** : un rayon entre la source et l'oreille ; s'il touche un mur ou un rocher, un `EqualizerSoundEffect` étouffe le son. Réverbération différente dans la cabane et dans la forêt (`ReverbSoundEffect`). Les joueurs localisent mieux le monstre, ce qui rend le jeu plus juste.
 - **Un échantillon, mille variantes** : sons d'ambiance ponctuels (vent, oiseaux, branches) à des positions et intervalles aléatoires, avec une hauteur qui varie de ±5 à 10 %. Jamais de boucle reconnaissable. Même principe pour les cris du monstre.
 - **Précharger tous les sons de peur** (`ContentProvider:PreloadAsync`) au début de la nuit : un screamer en retard de 300 ms est raté.
-- **Garder le monstre audible** : la musique baisse automatiquement quand un son du monstre joue.
+- **Garder le monstre audible** : l'ambiance baisse légèrement quand un son du monstre joue.
 
 ## 4. Immersion et interface
 
@@ -60,7 +66,7 @@ Les 24 autres vidéos de la playlist (Blizzard, E3, Sega, mascottes…) n'apport
   - blessure : boiterie et vignette ;
   - générateur : son et lumière qui montent.
   La dashcam porte sa propre interface (REC, heure, batterie).
-- **Faune vivante et silence.** Corbeaux, cerfs et hiboux suivent leur propre vie. **Près du monstre, la faune se tait ou fuit** : c'est un **nouveau signal constant** à ajouter à la liste du doc [13](13-lecons-ia-jeu-video.md).
+- **Faune uniquement sonore et silence.** **Aucun animal visible** dans le jeu, mais l'ambiance contient des sons d'animaux (oiseaux, hiboux, insectes, branches). **Près du monstre, ces sons se taisent** : c'est un **nouveau signal constant**, purement sonore, à ajouter à la liste du doc [13](13-lecons-ia-jeu-video.md).
 - **Micro-détails** : tente déchirée, sac abandonné, traces, griffures, surtout près des sentiers. Le monstre immobile au fond, perdu parmi les détails, devient un jeu de « trouve le monstre ».
 - **La faiblesse fait peur, pas les graphismes** (The Long Dark) : pas d'arme, lumière limitée, essoufflement.
 - **Conséquences visibles** : quand un joueur meurt ou est enlevé, **sa lampe tombe et reste allumée** à cet endroit. C'est un repère sinistre, un objet récupérable, et une matière pour le mimic.
@@ -77,31 +83,48 @@ Les 24 autres vidéos de la playlist (Blizzard, E3, Sega, mascottes…) n'apport
   Le niveau redescend si le groupe redevient prudent. C'est un état de groupe, différent des contre-mesures par habitude du doc 13.
 - **Bruit des pas honnête.** Le volume des pas dépend du sol (`Humanoid.FloorMaterial` : gravier ou branches = fort, mousse ou terre = faible), et **les mêmes valeurs** servent au rayon d'écoute du monstre. Le joueur entend son propre niveau de bruit.
 - **Savoir si on est caché**, sans barre : feuillage devant la caméra dans un buisson, vignette plus sombre lampe éteinte.
-- **Mode infrarouge de la dashcam** : voir dans le noir **sans émettre de lumière**, avec un écran granuleux, un champ réduit et une batterie limitée. La lampe éclaire mais trahit ; l'infrarouge est discret mais pauvre.
+- **Mode infrarouge de la dashcam (gamepass payant)** : voir dans le noir **sans émettre de lumière**, avec un écran granuleux, un champ réduit et une batterie limitée. La lampe éclaire mais trahit ; l'infrarouge est discret mais pauvre. Voir la section monétisation.
 - **Le monstre enquête sur les changements** : porte laissée ouverte, générateur relancé, objet déplacé. En option, un objet à lancer pour faire diversion.
 - **Garder l'identité** : pas d'armes, pas de virage action. Se cacher et attendre reste une stratégie valable, dans la limite des contre-mesures.
 
 ## 6. Introduction et narration (Half-Life)
 
-- **Jour 1 sans tutoriel.** Arrivée scénarisée où l'on garde le contrôle (camionnette qui dépose le groupe, marche jusqu'au camp). Une voix à la radio raconte pendant que les joueurs testent le sprint, la lampe et la caméra.
-- **L'interface apparaît en ramassant les objets** : REC en prenant la dashcam, indicateur de lampe en prenant la lampe.
-- **Montrer chaque capacité avant de l'utiliser contre les joueurs.** Par exemple, on voit le monstre grimper la tour au loin avant qu'il ne grimpe pour attraper quelqu'un.
-- **Scènes « pas ma guerre ».** Les joueurs voient de loin le monstre faire autre chose (traîner une carcasse de cerf, chasser un animal). Ça montre sa puissance sans viser personne : une nouvelle intention « Spectacle » pour le Directeur.
+- **Pas de tutoriel, aucune explication.** Les joueurs apparaissent directement à un endroit (la cabane par exemple) et comprennent seuls.
+- **Seul guidage : les générateurs.**
+  - un compteur discret **« 0/4 »** (générateurs réparés / total) ;
+  - les générateurs en panne sont **éteints ou cassés, avec de la fumée**, et un indicateur « en panne » ;
+  - en s'approchant : **« E » pour réparer / allumer**, une durée de réparation, et un **QTE très simple**.
+  Tout le monde comprend sans explication.
+- **Le monstre ne montre pas ses capacités à l'avance.** C'est aux joueurs d'apprendre de quoi il est capable en le voyant agir. Les signaux sonores constants ([13](13-lecons-ia-jeu-video.md)) suffisent pour que ce soit juste : on prévient du **danger**, pas de la **capacité**. C'est l'équilibre recherché : trop d'explications rendraient le jeu trop simple.
+- **Scènes « spectacle »** (le monstre aperçu au loin en train de faire autre chose) : **à voir**, idée en réserve, pas prioritaire.
 - **Montrer plutôt qu'écrire** : pas de notes ou d'enregistrements comme source principale de l'histoire.
 
-## 7. Monétisation éthique (microtransactions)
+## 7. Monétisation (décision du créateur)
 
-- **Rien de payant ne change le rapport de force avec le monstre** : pas de batterie plus longue, d'endurance, de résurrection ni de lampe plus puissante. Seulement du cosmétique, sans effet sur la visibilité (même faisceau quelle que soit la skin de lampe), et éventuellement des serveurs privés.
-- **Les achats ne sont jamais une donnée du Directeur** : pitié, difficulté et choix de cible ignorent totalement qui a payé.
-- **Pas de hasard payant** (loot boxes). Si un jour il y en a, Roblox impose d'afficher les probabilités et de vérifier `PolicyService` selon le pays. Plus simple : ne jamais en faire.
-- **Pas de FOMO** : les objets d'événement reviennent ou restent obtenables.
-- **Progression par l'exploit** : badges (`BadgeService`) comme « survivre à la nuit 5 sans mort » ou « trouver les 5 enregistrements cachés ».
-- **Analytique honnête** (`AnalyticsService`) pour voir à quelle nuit les groupes abandonnent et corriger le design, jamais pour placer une boutique au point de frustration.
-- **Jeu entièrement jouable gratuitement** : un jeu coop a besoin de groupes.
+Le jeu doit rapporter sur Roblox. Ce qui est décidé :
+
+| Achat | Type | Effet |
+|---|---|---|
+| **Mode infrarouge** de la dashcam | Gamepass | Voir dans le noir sans lumière (champ réduit, grain, batterie limitée) |
+| **Revive** | Achat (prix bas) | Revenir en jeu après la mort |
+| **Loot boxes** | Achat | **Cosmétiques uniquement** |
+
+Règles :
+- **Aucun traitement de faveur** : le monstre chasse et tue les joueurs qui ont payé exactement comme les autres. L'argent n'est jamais une donnée du Directeur.
+- **Loot boxes = cosmétiques seulement**, rien qui aide contre le monstre. Roblox **impose** d'afficher les **probabilités** de chaque objet, et de vérifier `PolicyService:GetPolicyInfoForPlayerAsync()` (`ArePaidRandomItemsRestricted`) : dans certains pays, les loot boxes payantes doivent être désactivées pour le joueur.
+- **Les cosmétiques ne changent pas la visibilité** (même faisceau de lampe quelle que soit la skin).
+- **Le jeu reste jouable gratuitement** du début à la fin.
+- **Analytique** (`AnalyticsService`) pour voir à quelle nuit les groupes abandonnent et corriger le design.
+- **Badges** d'exploit (`BadgeService`) : « survivre à la nuit 5 sans mort »…
+
+Points d'attention :
+- **Revive et mimic.** Le mimic ment en disant « j'ai été revive ». Si le revive existe vraiment, **le mensonge devient crédible**, ce qui rend le mimic encore plus efficace. À l'inverse, il faut que le vrai revive ait des **règles claires** (où réapparaît-on, combien de fois par partie) pour que les joueurs ne puissent pas démasquer le mimic trop facilement ni trop difficilement.
+- **Revive et équité** : à limiter (par exemple une fois par partie, ou pas pendant la nuit 5) pour ne pas casser la tension ni donner un trop gros avantage.
+- **Infrarouge** : le monstre doit rester redoutable face à un joueur en infrarouge (il peut le voir aussi bien qu'avec une lampe éteinte ; la gamepass aide à voir, pas à être invisible).
 
 ## 8. Simplicité (RTS)
 
-- **Résister à l'empilement de mécaniques** côté joueur. Le noyau reste : se déplacer, sprinter, lampe, réparer, se cacher, dashcam. Chaque ajout doit en remplacer un ou être vraiment nécessaire.
+- **Résister à l'empilement de mécaniques** côté joueur. Le noyau reste : se déplacer, sprinter, lampe, réparer (E + QTE simple), se cacher, dashcam. Chaque ajout doit en remplacer un ou être vraiment nécessaire.
 - **Cible : un groupe d'amis en coop détente**, pas de classement ni de chronomètre à l'écran.
 - **L'asymétrie est la force du jeu** : inutile d'équilibrer le monstre comme un joueur.
 

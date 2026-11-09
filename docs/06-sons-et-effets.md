@@ -16,6 +16,10 @@ Les sons sont l'arme principale du monstre dans les premières phases. Le Direct
 
 Dans la vidéo de référence, le panneau « Noises » du monstre contenait : Blood 1/2/3, Growl, Long Growl, Cut, Twig. **Les joueurs reconnaissaient le grognement** et paniquaient dès qu'ils l'entendaient : c'est un signal à exploiter.
 
+## Pas de musique en partie
+- **Aucune musique pendant la partie** : seulement dans le lobby.
+- L'ambiance vient du vent, de la forêt, des **sons d'animaux (aucun animal visible)** qui **se taisent près du monstre**, et du **silence**.
+
 ## Règles pour les sons
 - **Spatialisés** (3D) : le joueur doit pouvoir deviner la direction.
 - Joués **proches** d'un joueur pour le faire douter (« c'était quoi ? »), sans que ça devienne une alarme évidente au début.

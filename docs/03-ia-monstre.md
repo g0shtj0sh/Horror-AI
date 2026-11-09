@@ -81,6 +81,7 @@ Intentions possibles :
 | Intention | Description |
 |---|---|
 | Observer | Rester à distance, invisible, et étudier |
+| Silence | Ne rien faire du tout pendant un long moment, surtout après une attaque |
 | Bruit | Jouer un son à un endroit choisi (proche ou loin) |
 | Apparaître | Se montrer brièvement (au loin, derrière un arbre, dans le faisceau) puis disparaître |
 | Traquer | Suivre un joueur à distance, en rampant (silencieux) |
@@ -126,12 +127,13 @@ Intentions possibles :
 - **Difficulté adaptative** gérée par le Directeur, pas de modes de difficulté séparés.
 
 ## Règles ajoutées (voir [15-lecons-bazar-du-grenier.md](15-lecons-bazar-du-grenier.md))
-- **Règle des N secondes** : jamais trop longtemps sans stimulus pour un joueur (N selon la phase).
+- **Le silence est un outil** : après une attaque, ne rien faire pendant un bon moment fait monter la tension (intention « Silence »). Pas de stimulus obligatoire.
 - **Niveau d'alerte de groupe** progressif et réversible selon l'imprudence du groupe.
 - **Bruit des pas selon le sol** : mêmes valeurs pour le son entendu par le joueur et le rayon d'écoute du monstre.
-- **Faune qui se tait** près du monstre : nouveau signal constant.
+- **Les sons d'animaux se taisent** près du monstre (aucun animal visible, signal purement sonore).
 - **Enquêter sur les changements** (porte ouverte, générateur relancé, objet déplacé).
-- **Intention « Spectacle »** : se montrer de loin en train de faire autre chose (carcasse, chasse d'un animal).
-- **Montrer chaque capacité** de loin avant de l'utiliser contre les joueurs.
+- **Ne pas montrer ses capacités à l'avance** : les joueurs les découvrent quand il agit ; les signaux préviennent du danger, pas de la capacité.
+- Intention « Spectacle » (se montrer au loin occupé à autre chose) : en réserve, à voir.
 - **Points de révélation** : apparitions placées là où le joueur découvre le paysage.
-- **Les achats Robux ne sont jamais une donnée du Directeur.**
+- **Aucun traitement de faveur** pour les joueurs qui ont payé (infrarouge, revive) : le monstre les chasse comme les autres.
+- **Joueur en infrarouge** : aussi repérable qu'un joueur lampe éteinte.

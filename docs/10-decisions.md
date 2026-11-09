@@ -9,6 +9,12 @@
 | Map | Une map fixe, pas très grande, générateurs aléatoires parmi des emplacements prédéfinis. Style **forêt** comme dans la vidéo de référence (voir [11-map.md](11-map.md)) |
 | Direction artistique | **Hyper-réalisme** (textures PBR, éclairage réaliste) ; la caméra « mauvaise qualité » amplifie le réalisme (effet found footage) |
 | Construction de la map | Un Claude via **Vibestarter** (connecté à Roblox Studio et au web) télécharge et uploade lui-même les ressources CC0 (Poly Haven, ambientCG), en **1024×1024 max** ; vérification manuelle par le créateur |
+| Musique | **Aucune en partie**, seulement dans le lobby |
+| Faune | **Aucun animal visible**, uniquement des sons (qui se taisent près du monstre) |
+| Tutoriel | **Aucun** : joueurs déposés à la cabane, compteur « 0/4 » des générateurs, générateurs en panne qui fument, « E » + temps + QTE simple |
+| Capacités du monstre | **Jamais montrées à l'avance**, les joueurs les découvrent |
+| Silence | Outil de peur à part entière, pas de stimulus obligatoire |
+| Monétisation | Gamepass **infrarouge**, **revive** pas cher, **loot boxes de cosmétiques** ; aucun traitement de faveur du monstre |
 | Vue | Première personne, lampe torche, endurance, effet dashcam (système existant) |
 | Bandes noires | Désactivées par défaut, activables dans les paramètres |
 | Connaissance du monstre | **Omniscient** : il sait tout, mais choisit de faire semblant |
@@ -28,6 +34,8 @@
 5. **Nombre de générateurs** et d'emplacements possibles.
 6. **Les joueurs peuvent-ils se défendre** ? (lampe qui fait reculer le monstre au début, objets, cachettes, safe zone ?)
 7. **Soins** : la vie remonte-t-elle avec le temps ?
+11. **Revive** : combien de fois par partie, où réapparaît-on, autorisé en nuit 5 ?
+12. **Nombre de générateurs** : le compteur « 0/4 » suggère 4 par nuit, à confirmer.
 8. **La map** : plan précis et nom des zones (forêt hyper-réaliste validée).
 9. **Le monstre** : apparence, nom, taille.
 10. **Le chat de proximité / voix** : chat vocal Roblox activé ou non ?
