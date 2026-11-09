@@ -18,3 +18,17 @@ Deux versions à comparer en jeu.
 - **Pas de carte normale** dans ces exports : les détails de muscles sont seulement peints dans la couleur. Une `NormalMap` (générée dans Meshy ou à partir de la couleur) rendrait la chair bien plus réaliste sous la lampe torche.
 - **Version B** : sans squelette, elle ne peut pas être animée telle quelle. Il faudra la rigger (Meshy « Animer » ou Blender) si c'est celle qui est retenue.
 - **Animations manquantes** pour l'IA : ramper, grimper, se baisser sous une porte, attraper/porter, frapper, dévorer (voir [docs/12-monstre.md](../../docs/12-monstre.md)).
+
+## Textures prêtes pour Roblox (`textures-roblox/A` et `textures-roblox/B`)
+Extraites des `.glb`, chacune en **1024×1024** :
+
+| Fichier | Contenu | Champ `SurfaceAppearance` |
+|---|---|---|
+| `ColorMap.png` | Couleur | `ColorMap` |
+| `RoughnessMap.png` | Rugosité (canal vert d'origine) | `RoughnessMap` |
+| `MetalnessMap.png` | Métal (canal bleu d'origine, quasi noir : la chair n'est pas métallique) | `MetalnessMap` (peut être laissé vide) |
+| `NormalMap.png` | Relief **calculé à partir de la couleur** (approximation, convention OpenGL) | `NormalMap` |
+
+Remarques :
+- La carte de relief est une **approximation** tirée des contrastes de la couleur : elle fait ressortir muscles, dents et yeux, mais ce n'est pas un vrai relief sculpté. Une carte générée par Meshy à partir du modèle sera meilleure si disponible.
+- La rugosité moyenne est élevée (≈ 0,77) : chair plutôt mate. Pour un effet **chair humide et luisante**, on pourra assombrir la `RoughnessMap` (valeurs plus basses = plus brillant).
