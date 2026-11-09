@@ -23,6 +23,7 @@ Les joueurs doivent **réparer des générateurs et survivre 5 nuits**. Le monst
 | [docs/11-map.md](docs/11-map.md) | La map : style forêt de la vidéo, lieux, cachettes, besoins de l'IA (avec captures) |
 | [docs/12-monstre.md](docs/12-monstre.md) | Le design du monstre et sa génération avec Meshy AI |
 | [docs/13-lecons-ia-jeu-video.md](docs/13-lecons-ia-jeu-video.md) | Leçons de la vidéo « Mais pourquoi l'IA est pourrie ? » appliquées à notre monstre |
+| [docs/14-navigation.md](docs/14-navigation.md) | Navigation du monstre : navmesh, pathfinding, liens et coûts dans Roblox |
 | [AI/](AI/) | Le dossier où sera codée l'IA du monstre |
 
 ## Organisation du dépôt
