@@ -6,7 +6,7 @@
 | Approche IA | V1 à **règles** (Directeur), puis V2 **entraînée** sur les données réelles |
 | Objectif joueurs | Réparer les générateurs et survivre **5 nuits** |
 | Durées | Jour **10 min**, nuit **15 min** |
-| Map | Une map fixe, pas très grande, générateurs aléatoires parmi des emplacements prédéfinis. Map **pas encore choisie** |
+| Map | Une map fixe, pas très grande, générateurs aléatoires parmi des emplacements prédéfinis. Style **forêt** comme dans la vidéo de référence (voir [11-map.md](11-map.md)) |
 | Vue | Première personne, lampe torche, endurance, effet dashcam (système existant) |
 | Bandes noires | Désactivées par défaut, activables dans les paramètres |
 | Connaissance du monstre | **Omniscient** : il sait tout, mais choisit de faire semblant |
@@ -26,6 +26,6 @@
 5. **Nombre de générateurs** et d'emplacements possibles.
 6. **Les joueurs peuvent-ils se défendre** ? (lampe qui fait reculer le monstre au début, objets, cachettes, safe zone ?)
 7. **Soins** : la vie remonte-t-elle avec le temps ?
-8. **La map** : thème et plan.
+8. **La map** : plan précis et nom des zones (style forêt validé).
 9. **Le monstre** : apparence, nom, taille.
 10. **Le chat de proximité / voix** : chat vocal Roblox activé ou non ?

@@ -19,7 +19,7 @@ Le niveau de menace du monstre augmente à chaque période (détail dans [04-pha
 
 ## La map
 - **Une seule map fixe** pour commencer, pas très grande.
-- **Pas encore définie** (les images Backrooms ne servaient qu'à montrer la caméra).
+- Style **forêt**, comme la map de la vidéo de référence : détails et captures dans [11-map.md](11-map.md). (Les images Backrooms ne servaient qu'à montrer la caméra.)
 - Besoins pour l'IA : des zones ouvertes et des cachettes (angles, buissons, rochers, pièces sombres), des endroits isolés pour déposer les joueurs enlevés, des éléments à exploiter (lumières, portes).
 
 ## Les générateurs
