@@ -47,7 +47,7 @@ Il n'y a PAS encore de HUD.
 - Performance : le jeu doit tourner sur téléphone. StreamingEnabled, niveaux de détail, pas d'objets inutiles.
 
 ## 5. Les étapes
-ÉTAPE 1 — Sons de pas selon la surface
+ÉTAPE 1 — Sons de pas selon la surface ✅ FAIT (pas + ambiance ; sons du monstre et des générateurs à faire plus tard)
 - Détecte la surface sous le joueur (Humanoid.FloorMaterial, et un raycast vers le bas pour lire le MaterialVariant si on utilise des matériaux personnalisés).
 - Sons différents selon la surface (herbe, feuilles/terre, gravier, roche, boue, bois/plancher de la cabane, eau peu profonde), plusieurs prises par surface jouées au hasard avec une légère variation de hauteur.
 - Rythme et volume selon l'état : marche, course (plus fort), accroupi (très faible). Synchronise avec les animations existantes si possible.
@@ -84,5 +84,5 @@ Il n'y a PAS encore de HUD.
 
 (Les étapes suivantes — monstre, IA, vue debug, monétisation — viendront plus tard.)
 
-## ÉTAPE EN COURS : ÉTAPE 1
+## ÉTAPE EN COURS : ÉTAPE 2
 ````
